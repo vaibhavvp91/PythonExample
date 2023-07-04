@@ -1,0 +1,6 @@
+name: python-example-ven
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
