@@ -2,11 +2,11 @@ import heapq
 
 
 def dijkstra(graph, start):
-    distances = {node: float('inf') for node in graph}  # Initialize distances with infinity
-    distances[start] = 0  # Distance from start to start is 0
-    priority_queue = [(0, start)]  # Priority queue to store (distance, node) tuples
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
     visited = set()
-    previous = {node: None for node in graph}  # Store the previous node in the shortest path
+    previous = {node: None for node in graph}
 
     while priority_queue:
         current_distance, current_node = heapq.heappop(priority_queue)
